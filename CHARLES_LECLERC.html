@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charles Leclerc | Ferrari F1</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://media.formula1.com/image/upload/c_lfill,w_3392/q_auto/v1740000001/common/f1/2026/ferrari/2026ferraricarright.webp');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:5rem;
+    color:#ff2800;
+    text-shadow:0 0 20px #ff2800;
+}
+
+header p{
+    font-size:1.5rem;
+    margin-top:10px;
+}
+
+.btn{
+    margin-top:25px;
+    padding:15px 35px;
+    background:#ff2800;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 20px #ff2800;
+}
+
+.container{
+    width:85%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:20px;
+    padding:30px;
+    margin:30px 0;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h2{
+    color:#ff2800;
+    margin-bottom:15px;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:250px;
+    border-radius:20px;
+    border:4px solid #ff2800;
+    margin-bottom:20px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.stat-box{
+    background:#ff2800;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.stat-box h3{
+    font-size:2rem;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:black;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>CHARLES LECLERC</h1>
+    <p>Scuderia Ferrari Formula One Driver</p>
+    <a href="#about" class="btn">ดูประวัติ</a>
+</header>
+
+<div class="container">
+
+    <section id="about" class="card profile">
+        <img src="../Charles_Leclerc.png">
+        <h2>Charles Leclerc</h2>
+        <p>
+            นักแข่งรถ Formula 1 ชาวโมนาโก หมายเลข 16
+            สังกัดทีม Ferrari และเป็นหนึ่งในนักแข่งที่มีความเร็ว
+            และฝีมือโดดเด่นที่สุดในยุคปัจจุบัน
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>ประวัติ</h2>
+        <p>
+            Charles Leclerc เกิดเมื่อวันที่ 16 ตุลาคม 1997
+            ที่ประเทศโมนาโก เริ่มแข่งขันโกคาร์ทตั้งแต่อายุยังน้อย
+            ก่อนจะคว้าแชมป์ GP3 Series ในปี 2016
+            และ Formula 2 Championship ในปี 2017
+            จากนั้นเข้าสู่ Formula 1 กับทีม Sauber ในปี 2018
+            และย้ายมาร่วมทีม Ferrari ในปี 2019
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>สถิติสำคัญ</h2>
+
+        <div class="stats">
+            <div class="stat-box">
+                <h3>16</h3>
+                <p>หมายเลขรถ</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Ferrari</h3>
+                <p>ทีมปัจจุบัน</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Monaco</h3>
+                <p>สัญชาติ</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>F1</h3>
+                <p>Formula One</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>ผลงานเด่น</h2>
+        <ul>
+            <li>แชมป์ GP3 Series ปี 2016</li>
+            <li>แชมป์ Formula 2 ปี 2017</li>
+            <li>นักแข่ง Ferrari ตั้งแต่ปี 2019</li>
+            <li>ชนะการแข่งขัน Formula 1 หลายสนาม</li>
+            <li>คว้า Pole Position หลายครั้ง</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>Charles Leclerc Fan Website | Ferrari F1</p>
+</footer>
+
+</body>
+</html>
